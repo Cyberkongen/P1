@@ -1,0 +1,195 @@
+@font-face {
+    font-family: 'DejaVuSansMono';
+    src: url('font/DejaVuSansMono.ttf') format('truetype'); 
+  }
+
+
+*, *::before,*::after {
+    box-sizing: border-box;
+  }
+  
+  .name {
+    color: white;
+    font-weight: 600;
+    font-size: 24px;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+  
+  body {
+    font-family: 'DejaVuSansMono', sans-serif;
+    min-height: 100vh;
+    line-height: 1;
+    background-color: #181818;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5%;
+    height: 100vh;
+  }
+
+.navContainer {
+    width: 80%;
+    margin-top: 2%;
+    height: 10vh;
+    background-color: #181818;
+}
+
+.middleContainer {
+    width: 80%;
+    height: auto;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.cardContainerWrapper {
+    width: 80%;
+    height: auto;
+}
+
+.navContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.navTopSection, .navBotSection {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.nav {
+  margin-top: 2%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 1%;
+}
+
+
+  .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+    gap: 15px;
+    background-color: #181717;
+    outline: 2px #363636 solid;
+    outline-offset: -3px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: 400ms;
+  }
+  
+  .button .text {
+    color: white;
+    font-weight: 700;
+    font-size: 1em;
+    transition: 400ms;
+  }
+  
+  .button svg path {
+    transition: 400ms;
+  }
+  
+  .button:hover {
+    background-color: transparent;
+  }
+  
+  .button:hover .text {
+    color: #838383;
+  }
+  
+  .button:hover svg path {
+    fill: #838383;
+  }
+
+.middleContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.middleLeft {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.25rem;
+}
+
+.middleRight {
+  height: 100%;
+  width: 50%;
+}
+
+h1 {
+  color: white;
+  font-size: 42px;
+  font-family: 'DejaVuSansMono'
+}
+
+p {
+  color: white;
+  font-size: 18px;
+  font-family: 'DejaVuSansMono'
+}
+
+.cardContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.card {
+  height: 98%;
+  width: 31.3%;
+  margin: 1%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-left: 0%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  text-align: center;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.name1 {
+}
+
+.middleRight img {
+  width: 40%;
+  height: auto;
+}
+
+.middleRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width:481px) {
+  .cardContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    width: 80%;
+  }
+}
