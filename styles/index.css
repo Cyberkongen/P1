@@ -1,8 +1,8 @@
-@font-face {
-    font-family: 'DejaVuSansMono';
-    src: url('font/DejaVuSansMono.ttf') format('truetype'); 
-  }
-
+.anta-regular {
+  font-family: "Anta", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
 *, *::before,*::after {
     box-sizing: border-box;
@@ -24,13 +24,14 @@
   }
   
   body {
-    font-family: 'DejaVuSansMono', sans-serif;
+    font-family: "Anta", sans-serif;
     min-height: 100vh;
     line-height: 1;
     background-color: #181818;
   }
 
   main {
+    font-family: "Anta", sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -138,13 +139,11 @@
 h1 {
   color: white;
   font-size: 42px;
-  font-family: 'DejaVuSansMono'
 }
 
 p {
   color: white;
   font-size: 18px;
-  font-family: 'DejaVuSansMono'
 }
 
 .cardContainer {
@@ -153,16 +152,21 @@ p {
 }
 
 .card {
-  height: 98%;
+  height: 350px;
   width: 31.3%;
   margin: 1%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   gap: 10px;
   margin-left: 0%;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   text-align: center;
+}
+
+.card button {
+  margin-bottom: 10%;
 }
 
 .card img {
@@ -187,9 +191,21 @@ p {
 @media (max-width:481px) {
   .cardContainer {
     flex-direction: column;
-    align-items: center;
+    align-items: ;
+    margin-left: 0;
   }
   .card {
     width: 80%;
+    margin-left: 0;
+  }
+  .middleContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .middleLeft, .middleRight {
+    width: 80%;
+  }
+  .middleRight {
+    display: none;
   }
 }
